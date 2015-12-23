@@ -36,13 +36,19 @@ I provided the following very simple scripts:
 Be sure that your CWD is the root of this repository.
 
 - First build the app containers with the [build.sh](build.sh):
+
   `bash build.sh`
+
 - Then start the containers with the [start.sh](start.sh):
+
   `bash start.sh`
+
 - Visit the `https://app1.example.com` and `https://app2.example.com` you will have to add a security exception,
   because the certificates are self-signed
 - Both apps should work as expected
 - Kill the app2 with the [kill_app2.sh](kill_app2.sh)
+
   `bash kill_app2.sh`
+
 - The app1 should work as expected
-- If you visit https://app2.example.com you will get additional warning that the certificate does not match the domain. The app1 certificate is used. If you confirm the exception you get app1.
+- If you visit https://app2.example.com you will get additional warning that the certificate does not match the domain. The app1 certificate is used. If you confirm the exception, you get app1 served.
