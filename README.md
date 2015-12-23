@@ -52,3 +52,7 @@ Be sure that your CWD is the root of this repository.
 
 - The app1 should work as expected
 - If you visit https://app2.example.com you will get additional warning that the certificate does not match the domain. The app1 certificate is used. If you confirm the exception, you get app1 served.
+
+## Teardown
+
+Delete the 2 lines you added to `/etc/hosts`
